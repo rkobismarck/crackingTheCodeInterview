@@ -1,0 +1,11 @@
+{
+  "name": "1.1",
+  "version": "1.0.0",
+  "description": "Module to perform rotation validation among a pair of strings.",
+  "main": "rotation.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "RCTT",
+  "license": "ISC"
+}
