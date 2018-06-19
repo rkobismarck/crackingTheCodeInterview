@@ -15,15 +15,15 @@ describe('Validate that the second string is a rotated version of the first stri
 });
 
 
-describe('Validate that the first string is only one add far from the second onde..', () => {
-  it('It should be able to return a true value, this means that is only needed one character add to the first string.', () => {
+describe('Validate that the second string is only one rotated version from the first one.', () => {
+  it('It should be able to return a true value, this means that the second string is only a rotated version of the first one.', () => {
     assert.equal(true, app.isSubstring("waterbottle", "erbottlewat"));
   });
 });
 
 
-describe('Validate that the first string is only one add far from the second onde..', () => {
-  it('It should be able to return a true value, this means that is only needed one character add to the first string.', () => {
+describe('Validate that the second string is only one rotated version from the first one.', () => {
+  it('It should be able to return a true value, this means that the second string is only a rotated version of the first one.', () => {
     assert.equal(true, app.isSubstring("arguments", "tsargumen"));
   });
 });
