@@ -44,23 +44,3 @@ const removeDups = () => {
 };
 
 module.exports = removeDups();
-let mock = {
-        "data": "HP",
-        "next": {
-            "data": "HPE",
-            "next": {
-                "data": "IBM",
-                "next": {
-                    "data": "HP",
-                    "next": {
-                        "data": "Apple Computer Inc.",
-                        "next": null
-                    }
-                }
-            }
-        }
-    };
-var app = removeDups();
-
-app.performDuplicatesRemovalNonBuffered(mock)
- 
