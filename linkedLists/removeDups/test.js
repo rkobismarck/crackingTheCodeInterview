@@ -38,6 +38,9 @@ describe('Validate that we are able to remove duplicates from a linked list.', (
     it('It should be able a linked list version without items dups.', () => {
         expect(expected).to.deep.equal(app.performDuplicatesRemoval(mock))
     });
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
+    });
 });
 
 describe('Validate that we are able to remove duplicates from a linked list.', () => {
@@ -75,6 +78,9 @@ describe('Validate that we are able to remove duplicates from a linked list.', (
     it('It should be able a linked list version without items dups.', () => {
         expect(expected).to.deep.equal(app.performDuplicatesRemoval(mock))
     });
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
+    });
 });
 
 
@@ -110,6 +116,9 @@ describe('Validate that we are able to remove duplicates from a linked list.', (
     it('It should be able a linked list version without items dups.', () => {
         expect(app.performDuplicatesRemoval(mock)).to.deep.equal(expected)
     });
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
+    });
 });
 
 describe('Validate that we are able to remove duplicates from a linked list.', () => {
@@ -128,6 +137,10 @@ describe('Validate that we are able to remove duplicates from a linked list.', (
     
     it('It should be able a linked list version without items dups.', () => {
         expect(app.performDuplicatesRemoval(mock)).to.deep.equal(expected)
+    });
+
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
     });
 });
 
@@ -177,6 +190,10 @@ describe('Validate that we are able to remove duplicates from a linked list.', (
     it('It should be able a linked list version without items dups.', () => {
         expect(expected).to.deep.equal(app.performDuplicatesRemoval(mock))
     });
+
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
+    });
 });
 
 describe('Validate that we are able to remove duplicates from a linked list.', () => {
@@ -201,5 +218,44 @@ describe('Validate that we are able to remove duplicates from a linked list.', (
     
     it('It should be able a linked list version without items dups.', () => {
         expect(expected).to.deep.equal(app.performDuplicatesRemoval(mock))
+    });
+
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
+    });
+});
+
+describe('Validate that we are able to remove duplicates from a linked list.', () => {
+    let mock = {
+        "data": "HPE",
+        "next": {
+            "data": "HPE",
+            "next": {
+                "data": "HPE",
+                "next": {
+                    "data" : "HPE",
+                    "next" : {
+                        "data" : "Apple Computer Inc.",
+                        "next" : null
+                    }
+                }
+            }
+        }
+    };
+
+    let expected = {
+        "data": "HPE",
+        "next": {
+            "data": "Apple Computer Inc.",
+            "next": null
+        }
+    };
+    
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemoval(mock))
+    });
+
+    it('It should be able a linked list version without items dups.', () => {
+        expect(expected).to.deep.equal(app.performDuplicatesRemovalNonBuffered(mock))
     });
 });
